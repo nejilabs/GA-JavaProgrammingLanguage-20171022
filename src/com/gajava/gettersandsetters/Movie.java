@@ -2,11 +2,11 @@ package com.gajava.gettersandsetters;
 
 public class Movie {
     String movieTitle;
-    String movieRating;
+    private String movieRating;
 
     public Movie(String movieTitle, String movieRating){
+        this.setMovieRating(movieRating);
         this.movieTitle = movieTitle;
-        this.movieRating = movieRating;
     }
 
     public void setMovieRating(String movieRating) {
@@ -14,7 +14,10 @@ public class Movie {
         if (movieRating.equals("PG") || movieRating.equals("G") || movieRating.equals("PG-13") || movieRating.equals("R") || movieRating.equals("NR"))
         { this.movieRating = movieRating; }
         else{ this.movieRating = "NR"; }
+    }
 
+    public String getMovieRating(){
+        return movieRating;
     }
 
 }

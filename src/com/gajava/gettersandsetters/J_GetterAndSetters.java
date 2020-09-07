@@ -5,10 +5,10 @@ public class J_GetterAndSetters {
         Movie movie1 = new Movie("Movie1 Title", "PG");
 
         movie1.setMovieRating("G");
-        System.out.println(movie1.movieRating);
+        System.out.println(movie1.getMovieRating());
 
         movie1.setMovieRating("Dog");
-        System.out.println(movie1.movieRating);
+        System.out.println(movie1.getMovieRating());
     }
 }
 
